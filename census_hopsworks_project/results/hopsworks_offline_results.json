@@ -1,0 +1,7 @@
+{
+  "operation": "create_training_data",
+  "time_seconds": 5.5482017993927,
+  "fetch_time_seconds": 1.9020111560821533,
+  "rows": 32561,
+  "columns": 15
+}

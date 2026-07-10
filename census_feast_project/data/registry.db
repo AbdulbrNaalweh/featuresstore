@@ -1,0 +1,58 @@
+
+a
+A
+user_idUnique user identifier"user_idJcensus_income_feast
+ÉêÿÎøôöèâó·ĞØ‰×â
+J
+*
+__dummy"
+__dummy_idJcensus_income_feast
+ÉêÿÎĞ˜§éâó·ĞØ‰×â1"$acb2c763-73ac-492f-bc2d-5747c028defd*âó·Ğ€÷µé2Ö
+µ
+census_featurescensus_income_feastuser_id"
+age"
+	workclass"
+	education"
+education_num"
+marital_status"
+
+occupation"
+relationship"
+race"
+sex"
+capital_gain"
+capital_loss"
+hours_per_week"
+native_country"
+
+income*
+datasetcensus_income2€ç„:pevent_timestampZ'%../data/processed/census_data.parquet¢census_data_source’áó·Ğø«ã´"âó·Ğğïâà@b
+user_id’latest
+ÉêÿÎÈë±æâó·ĞØ‰×âb¹event_timestampZ'%../data/processed/census_data.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢census_data_sourceªcensus_income_feast’ÉêÿÎ ¨,"ÉêÿÎ€¡£¾z;
+census_income_feast$10261eec-7532-45d5-8db6-7aa5bcbdc7b9Š5
+
+census_income_feast
+ÉêÿÎÀÒÑ¾ÉêÿÎÀÒÑ¾’ø
+õ
+census_featurescensus_income_feast"feature_view*Š
+é
+census_featurescensus_income_feastuser_id"
+age"
+	workclass"
+	education"
+education_num"
+marital_status"
+
+occupation"
+relationship"
+race"
+sex"
+capital_gain"
+capital_loss"
+hours_per_week"
+native_country"
+
+income*
+datasetcensus_income2€ç„:£event_timestampZ'%../data/processed/census_data.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢census_data_source’ÉêÿÎ ¨,"ÉêÿÎ€¡£¾@b
+user_id’latest
+ÉêÿÎÈë±æÉêÿÎÈë±æ2ÉêÿÎàšíèB$7854d61e-66a8-4563-ac55-45b092cc8f35

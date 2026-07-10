@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  census-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: census-hopsworks-container
+    restart: unless-stopped
+    volumes:
+      # Mount entire project for development (optional)
+      - .:/app
+      # Mount data directory for persistent data
+      - ./data:/app/data
+      # Mount results directory
+      - ./results:/app/results
+      # Mount config for dynamic configuration changes
+      - ./config:/app/config
+      # Exclude .venv from mounting (use container's virtual env)
+      - /app/.venv
+    environment:
+      - PYTHONUNBUFFERED=1
+      - ENVIRONMENT=development
+      # Hopsworks API credentials (use .env file in production!)
+      - HOPSWORKS_API_KEY=${HOPSWORKS_API_KEY}
+      - HOPSWORKS_PROJECT=${HOPSWORKS_PROJECT:-census_hopsworks_project}
+
+    ports:
+      - "8888:8888"  # Jupyter port (if you use notebooks)
+      - "8000:8000"  # API port (if applicable)
+    networks:
+      - census-network
+    command: python run.py  # Or your main entry point
+
+
+networks:
+  census-network:
+    driver: bridge
+

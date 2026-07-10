@@ -1,0 +1,57 @@
+{
+  "latency": {
+    "minimal": {
+      "feature_set": "minimal",
+      "num_features": 2,
+      "iterations": 100,
+      "mean_ms": 8.566439151763916,
+      "median_ms": 7.992744445800781,
+      "p95_ms": 11.503946781158447,
+      "p99_ms": 16.029336452484305,
+      "min_ms": 5.96308708190918,
+      "max_ms": 49.68571662902832,
+      "std_ms": 4.451484329224709
+    },
+    "standard": {
+      "feature_set": "standard",
+      "num_features": 4,
+      "iterations": 100,
+      "mean_ms": 7.832658290863037,
+      "median_ms": 7.001757621765137,
+      "p95_ms": 10.533320903778074,
+      "p99_ms": 12.52983331680298,
+      "min_ms": 5.999565124511719,
+      "max_ms": 13.000249862670898,
+      "std_ms": 1.3791993457626992
+    },
+    "full": {
+      "feature_set": "full",
+      "num_features": 8,
+      "iterations": 100,
+      "mean_ms": 8.405117988586426,
+      "median_ms": 8.000493049621582,
+      "p95_ms": 11.001622676849365,
+      "p99_ms": 13.005328178405765,
+      "min_ms": 5.975246429443359,
+      "max_ms": 13.531684875488281,
+      "std_ms": 1.4549137645114745
+    }
+  },
+  "throughput": {
+    "minimal": {
+      "feature_set": "minimal",
+      "num_features": 2,
+      "duration_seconds": 10.010892629623413,
+      "total_queries": 1202,
+      "throughput_qps": 120.06921305330357
+    },
+    "standard": {
+      "feature_set": "standard",
+      "num_features": 4,
+      "duration_seconds": 10.005841255187988,
+      "total_queries": 870,
+      "throughput_qps": 86.94921074716316
+    }
+  },
+  "timestamp": "2026-05-20T20:14:55.210993"
+}

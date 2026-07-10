@@ -1,0 +1,10 @@
+{
+  "feature_group_creation": {
+    "time_seconds": 19.797409296035767,
+    "rows": 32561,
+    "columns": 16
+  },
+  "feature_view_creation": {
+    "time_seconds": 1.8647966384887695
+  }
+}
