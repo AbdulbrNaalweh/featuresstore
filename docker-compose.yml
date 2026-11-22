@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  feast:
+    build:
+      context: ./census_feast_project
+    image: census-feast
+    container_name: census-feast
+    restart: unless-stopped
+    ports:
+      - "8001:8000"   
+      - "8888:8888"   
+    volumes:
+      - ./census_feast_project/data:/app/data        
+      - ./census_feast_project/results:/app/results 
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys, urllib.request; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5).status == 200 else 1)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 90s
+
+  hopsworks:
+    build:
+      context: ./census_hopsworks_project
+    image: census-hopsworks
+    container_name: census-hopsworks
+    restart: "no"
+    volumes:
+      - ./census_hopsworks_project/config:/app/config
+      - ./census_hopsworks_project/data:/app/data      
+      - ./census_hopsworks_project/results:/app/results 
